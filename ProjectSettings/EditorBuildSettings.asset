@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/transitionscene.unity
-    guid: c6f451829c6b9e7429cb71f1c25c03a9
+    path: Assets/Scenes/MainMenu.unity
+    guid: 59bec6768a0409c45a38832ff86e55ca
   - enabled: 1
-    path: Assets/Scenes/transitionscenetest2.unity
-    guid: dab29c69a2801174d96935fcf7ca7d46
+    path: Assets/Scenes/SampleScene.unity
+    guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 0d40b5be21afac143ac203b5ed4d34c7
   m_configObjects: {}
