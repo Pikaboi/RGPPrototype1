@@ -7,11 +7,14 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
-    guid: 59bec6768a0409c45a38832ff86e55ca
+    guid: 2e365b6d08715ad45812d358e0901f65
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/Scenes/Hallway.unity
+    guid: a80ea621e8318a647b326bbffd3ec5fd
+  - enabled: 1
+    path: Assets/Scenes/Puzzle Room.unity
+    guid: d61727c89a4793747a129714c8b2ea1c
   - enabled: 1
     path: Assets/Scenes/EndScreen.unity
-    guid: 0d40b5be21afac143ac203b5ed4d34c7
+    guid: 3681bbfa833c8ce46b38f1fead129c0c
   m_configObjects: {}

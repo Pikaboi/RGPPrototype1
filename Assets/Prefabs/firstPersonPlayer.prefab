@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1497699109329916001}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 1497699109831136597}
   - component: {fileID: 1497699109831136601}
   - component: {fileID: 1497699109831136596}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 1497699110109113309}
   - component: {fileID: 1497699110109113308}
   - component: {fileID: -2664279705156236402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: firstPersonPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ MonoBehaviour:
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 256
 --- !u!114 &-2664279705156236402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,13 +281,13 @@ GameObject:
   - component: {fileID: 1497699110791040082}
   - component: {fileID: 1497699110791040081}
   - component: {fileID: 1497699110791040080}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1497699110791040082
 Transform:
   m_ObjectHideFlags: 0
