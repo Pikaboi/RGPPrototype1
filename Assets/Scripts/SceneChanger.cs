@@ -25,7 +25,7 @@ public class SceneChanger : MonoBehaviour
         //Check which warp it is.
         if(other.tag == "warppoint")
         {
-            goPanel.startFade();
+            goPanel.startSolidify(other.GetComponent<scenenum>().iSceneNum);
         }
     }
 }
