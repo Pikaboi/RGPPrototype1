@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7831217157736003314}
   - component: {fileID: 7831217157736003315}
-  - component: {fileID: 7831217157736003277}
+  - component: {fileID: 5482942675918381316}
   m_Layer: 0
   m_Name: WarpZone
   m_TagString: warppoint
@@ -45,7 +45,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8311703, y: 1.5112019, z: 2.9385808}
   m_Center: {x: -0.1179117, y: 0.25560093, z: 0.31185663}
---- !u!114 &7831217157736003277
+--- !u!114 &5482942675918381316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -54,7 +54,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7831217157736003312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 248cf0f393bc9fe45abaf69f026cabcc, type: 3}
+  m_Script: {fileID: 11500000, guid: 65ee13ea4a6604144aac636ad7d4f9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iSceneNum: 1
+  goPanel: {fileID: 0}

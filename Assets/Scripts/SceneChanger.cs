@@ -6,7 +6,7 @@ public class SceneChanger : MonoBehaviour
 {
     //Get the scenes panel
     [SerializeField]
-    private PanelControl goPanel;
+    public PanelControl goPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,8 @@ public class SceneChanger : MonoBehaviour
         //Check which warp it is.
         if(other.tag == "warppoint")
         {
-            goPanel.startSolidify(other.GetComponent<scenenum>().iSceneNum);
+            // goPanel.startSolidify(other.GetComponent<scenenum>().iSceneNum);
+            Application.LoadLevel(Application.loadedLevel + 1);
         }
     }
 }
