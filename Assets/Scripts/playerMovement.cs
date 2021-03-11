@@ -88,6 +88,7 @@ public class playerMovement : MonoBehaviour
     {
         bItemInteract = true;
         cIItem = cItem;
+
     }
 
     //Remove the ability to interact to a *HINT* item

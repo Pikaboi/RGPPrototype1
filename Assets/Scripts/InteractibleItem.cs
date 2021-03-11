@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class InteractibleItem : MonoBehaviour
 {
+    //Add doors here
+    public GameObject[] trig;
+    
+    
     public Image ibuttonPrompt;
     //Its box collider
     private BoxCollider bcInteractArea;
@@ -61,5 +65,12 @@ public class InteractibleItem : MonoBehaviour
     public void interactCollect()
     {
         Debug.Log("2");
+
+
+        //Open doors
+        for(int i =0; i< trig.Length; i++)
+        {
+            trig[i].SetActive(false);
+        }
     }
 }
