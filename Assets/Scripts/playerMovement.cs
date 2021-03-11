@@ -21,8 +21,10 @@ public class playerMovement : MonoBehaviour
     bool isGrounded;
 
     //Interaction Based Variables
-    private bool bInteract = false;
+    private bool bHintInteract = false;
     private InteractibleHint cIHint;
+    private bool bItemInteract = false;
+    private InteractibleItem cIItem;
 
     // Start is called before the first frame update
     void Start()
@@ -58,22 +60,41 @@ public class playerMovement : MonoBehaviour
         //Check if player hit the button
         if (Input.GetKeyDown(KeyCode.E)){
             //Now we check if we are letting it do anything
-            if(bInteract == true)
+            if(bHintInteract == true)
             {
                 //We can interact now
                 cIHint.interactText();
             }
+            //We also check if its an item that has the padlock number
+            if(bItemInteract == true)
+            {
+                cIItem.interactCollect();
+            }
         }
     }
 
-    public void enableInteract(InteractibleHint cHint)
+    //Allow an interaction with a *HINT* item
+    public void enableHintInteract(InteractibleHint cHint)
     {
-        bInteract = true;
+        bHintInteract = true;
         cIHint = cHint;
     }
-
-    public void disableInteract()
+    //Allow an interaction with *PADLOCK CODE* item
+    public void enableItemInteract(InteractibleItem cItem)
     {
-        bInteract = false;
+        bItemInteract = true;
+        cIItem = cItem;
+    }
+
+    //Remove the ability to interact to a *HINT* item
+    public void disableHintInteract()
+    {
+        bHintInteract = false;
+    }
+
+    //Remove the ability to interact to a *PADLOCK CODE* item
+    public void disableItemInteract()
+    {
+        bItemInteract = false;
     }
 }
