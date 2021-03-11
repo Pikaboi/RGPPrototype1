@@ -9,6 +9,8 @@ TagManager:
   - Teen
   - Adult
   - Elderly
+  - InteractableItem
+  - InteractableHint
   layers:
   - Default
   - TransparentFX
