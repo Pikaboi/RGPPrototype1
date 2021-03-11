@@ -4,11 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/transitionscene.unity
-    guid: c6f451829c6b9e7429cb71f1c25c03a9
-  - enabled: 1
-    path: Assets/Scenes/transitionscenetest2.unity
-    guid: dab29c69a2801174d96935fcf7ca7d46
+  m_Scenes: []
   m_configObjects: {}
