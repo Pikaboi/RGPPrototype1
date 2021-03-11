@@ -5,6 +5,7 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
 
+    //Movement Based Variables
     public CharacterController controller;
 
     public float speed = 12.0f;
@@ -18,6 +19,10 @@ public class playerMovement : MonoBehaviour
     public LayerMask groundMask;
 
     bool isGrounded;
+
+    //Interaction Based Variables
+    private bool bInteract = false;
+    private InteractibleHint cIHint;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +55,25 @@ public class playerMovement : MonoBehaviour
         //Fall down
         controller.Move(velocity * Time.deltaTime);
 
-       
+        //Check if player hit the button
+        if (Input.GetKeyDown(KeyCode.E)){
+            //Now we check if we are letting it do anything
+            if(bInteract == true)
+            {
+                //We can interact now
+                cIHint.interactText();
+            }
+        }
+    }
+
+    public void enableInteract(InteractibleHint cHint)
+    {
+        bInteract = true;
+        cIHint = cHint;
+    }
+
+    public void disableInteract()
+    {
+        bInteract = false;
     }
 }
