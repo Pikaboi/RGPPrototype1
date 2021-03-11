@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InteractibleItem : MonoBehaviour
 {
+    public Image ibuttonPrompt;
     //Its box collider
     private BoxCollider bcInteractArea;
     // Start is called before the first frame update
@@ -27,6 +29,8 @@ public class InteractibleItem : MonoBehaviour
             //General practice to prevent a crash if no script is put on
             if (other.GetComponent<playerMovement>() != false)
             {
+                //Show the button prompt
+                ibuttonPrompt.enabled = true;
                 //Just like the Hints, we allow the player the power to interact with the item.
                 other.GetComponent<playerMovement>().enableItemInteract(this);
             }
@@ -41,6 +45,8 @@ public class InteractibleItem : MonoBehaviour
             //General practice to prevent a crash if no script is put on
             if (other.GetComponent<playerMovement>() != false)
             {
+                //Show the button prompt
+                ibuttonPrompt.enabled = false;
                 //Turn off the players ability to interact
                 other.GetComponent<playerMovement>().disableItemInteract();
             }

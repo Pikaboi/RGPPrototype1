@@ -25,8 +25,10 @@ public class SceneChanger : MonoBehaviour
         //Check which warp it is.
         if(other.tag == "warppoint")
         {
-            // goPanel.startSolidify(other.GetComponent<scenenum>().iSceneNum);
-            Application.LoadLevel(Application.loadedLevel + 1);
+            //This lets us warp to any scene we want and transition to it smoothly
+            //This comes in handy for later!
+            goPanel.startSolidify(other.GetComponent<scenenum>().iSceneNum);
+            //Application.LoadLevel(Application.loadedLevel + 1);
         }
     }
 }
