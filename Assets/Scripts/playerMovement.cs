@@ -8,6 +8,8 @@ public class playerMovement : MonoBehaviour
     //Movement Based Variables
     public CharacterController controller;
 
+    public float age = 5;
+
     public float speed = 12.0f;
 
     public float gravity = -9.81f;
@@ -35,6 +37,8 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        GameObject.FindGameObjectWithTag("MainCamera").transform.SetPositionAndRotation(new Vector3(transform.position.x, transform.position.y + age / 10 , transform.position.z), GameObject.FindGameObjectWithTag("MainCamera").transform.rotation);
 
         //Falling Down
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
