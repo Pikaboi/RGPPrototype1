@@ -356,6 +356,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfe36ddeff202fb4ab501bcc1f06ca4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &864769473 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8468441443543137339, guid: 48e4f572c76dc864592c798170ebb44c,
+    type: 3}
+  m_PrefabInstance: {fileID: 727397839}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1081601478
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,6 +642,7 @@ GameObject:
   - component: {fileID: 1481909964}
   - component: {fileID: 1481909970}
   - component: {fileID: 1481909969}
+  - component: {fileID: 1481909971}
   m_Layer: 8
   m_Name: Key
   m_TagString: Untagged
@@ -750,12 +763,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1481909963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58455bacdb4dd5a4ea8f33f8125d1181, type: 3}
+  m_Script: {fileID: 11500000, guid: 9031a0045b77edf45a6cf01faa0f78a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ibuttonPrompt: {fileID: 1312297436}
-  cHintItem: {fileID: 1924672910}
-  sClueText: The letters on the fridge, odd.
+--- !u!114 &1481909971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481909963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035722935d2fd3f4e8f5bda3effa8338, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ibuttonPrompt: {fileID: 0}
+  cHintItem: {fileID: 0}
+  sClueText: 
 --- !u!1 &1484375002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,9 +1256,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1924672909}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5616d9c04b98092459b0f87746f57b44, type: 3}
+  m_Script: {fileID: 11500000, guid: 035722935d2fd3f4e8f5bda3effa8338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ibuttonPrompt: {fileID: 864769473}
+  cHintItem: {fileID: 1481909970}
+  sClueText: Press E to pick up
 --- !u!136 &1924672911
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1303,7 +1331,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924672909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.24, y: 1.08, z: -10.58}
+  m_LocalPosition: {x: -5.71, y: 1.23, z: -9.161}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1334,7 +1362,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc85a203f3aefae4da9e93018f8a66c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1497699110914465066}
 --- !u!114 &1497699109025751969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1357,7 +1384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497699109025751982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.65, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1497699110914465071}
@@ -1578,8 +1605,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497699109985794720}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.00000071526, z: -0.000000089407}
+  m_LocalScale: {x: 4.3979, y: 4.3979, z: 4.3979}
   m_Children: []
   m_Father: {fileID: 1497699110914465071}
   m_RootOrder: 0
@@ -1615,6 +1642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1497699110914465064}
+  age: 5
   speed: 12
   gravity: -9.81
   groundCheck: {fileID: 1497699109061404308}
@@ -1649,8 +1677,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497699110914465066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.47, y: 2.769, z: -0.308}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 3.6, z: 0}
+  m_LocalScale: {x: 1, y: 1.84, z: 1}
   m_Children:
   - {fileID: 1497699109985794727}
   - {fileID: 1497699109025751970}
