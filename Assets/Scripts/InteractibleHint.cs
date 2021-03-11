@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class InteractibleHint : MonoBehaviour
 {
     //This is a button on the UI canvas to show you can interact
-    public Image buttonPrompt;
+    public Image ibuttonPrompt;
+    [SerializeField]
+    private string sClueText;
     // Start is called before the first frame update
     void Start()
     {
         //Turn off the button at the start
-        buttonPrompt.enabled = false;
+        ibuttonPrompt.enabled = false;
     }
 
     // Update is called once per frame
@@ -25,10 +27,14 @@ public class InteractibleHint : MonoBehaviour
         //Check if the player is in the area
         if(other.tag == "Player")
         {
-            //Show the button prompt
-            buttonPrompt.enabled = true;
+            if (other.GetComponent<playerMovement>() != false)
+            {
+                //Show the button prompt
+                ibuttonPrompt.enabled = true;
 
-            //Now we can allow the player to activate his button press in movement
+                //Now we can allow the player to activate his button press in movement
+                other.GetComponent<playerMovement>().enableInteract(this);
+            }
         }
     }
 
@@ -37,10 +43,19 @@ public class InteractibleHint : MonoBehaviour
         //Check if the player left the interactible area
         if(other.tag == "Player")
         {
-            //Remove the button promp
-            buttonPrompt.enabled = false;
+            if (other.GetComponent<playerMovement>() != false)
+            {
+                //Remove the button promp
+                ibuttonPrompt.enabled = false;
 
-            //We want to turn off the ability to use the interact button too
+                //We want to turn off the ability to use the interact button too
+                other.GetComponent<playerMovement>().disableInteract();
+            }
         }
+    }
+
+    public void interactText()
+    {
+        Debug.Log(sClueText);
     }
 }

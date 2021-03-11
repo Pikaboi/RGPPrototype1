@@ -22,6 +22,7 @@ public class playerMovement : MonoBehaviour
 
     //Interaction Based Variables
     private bool bInteract = false;
+    private InteractibleHint cIHint;
 
     // Start is called before the first frame update
     void Start()
@@ -60,13 +61,15 @@ public class playerMovement : MonoBehaviour
             if(bInteract == true)
             {
                 //We can interact now
+                cIHint.interactText();
             }
         }
     }
 
-    public void enableInteract()
+    public void enableInteract(InteractibleHint cHint)
     {
         bInteract = true;
+        cIHint = cHint;
     }
 
     public void disableInteract()

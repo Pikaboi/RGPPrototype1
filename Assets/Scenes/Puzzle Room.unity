@@ -753,7 +753,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58455bacdb4dd5a4ea8f33f8125d1181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonPrompt: {fileID: 1312297436}
+  ibuttonPrompt: {fileID: 1312297436}
+  sClueText: The letters on the fridge, odd.
 --- !u!1 &1484375002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,9 +1209,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1497699109025751982}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30a1434035a20d04aad7f3d8f3f9e032, type: 3}
+  m_Script: {fileID: 11500000, guid: bc85a203f3aefae4da9e93018f8a66c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1497699110914465066}
 --- !u!114 &1497699109025751969
 MonoBehaviour:
   m_ObjectHideFlags: 0
