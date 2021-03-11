@@ -4,5 +4,28 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+<<<<<<< Updated upstream
+    guid: 07f8faf9396da1b40aa36bbc9a800ae9
+=======
+    guid: 453c658e24be9f04fb82c868263dbe29
+>>>>>>> Stashed changes
+  - enabled: 1
+    path: Assets/Scenes/Hallway.unity
+    guid: a80ea621e8318a647b326bbffd3ec5fd
+  - enabled: 1
+    path: Assets/Scenes/Puzzle Room.unity
+<<<<<<< Updated upstream
+    guid: d0cb2846303ce6f46883981b2441b88f
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: bc14be4eca12f764fa3bc6e86d3d89cc
+=======
+    guid: 025d4791c7ff2094d9ed3dafc7020dd1
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 04f1fa38e5463014fa16eb37a93eada1
+>>>>>>> Stashed changes
   m_configObjects: {}

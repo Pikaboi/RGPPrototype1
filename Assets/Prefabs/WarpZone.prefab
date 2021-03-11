@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7831217157736003314}
   - component: {fileID: 7831217157736003315}
-  - component: {fileID: 7831217157736003277}
-  m_Layer: 10
+  - component: {fileID: 5482942675918381316}
+  m_Layer: 0
   m_Name: WarpZone
   m_TagString: warppoint
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 7831217157736003312}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.05}
-  m_LocalScale: {x: 1, y: 1, z: 1.8808}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -45,7 +45,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8311703, y: 1.5112019, z: 2.9385808}
   m_Center: {x: -0.1179117, y: 0.25560093, z: 0.31185663}
---- !u!114 &7831217157736003277
+--- !u!114 &5482942675918381316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -54,7 +54,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7831217157736003312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b95d7a5eed8a62a4eacfddd538c8a423, type: 3}
+  m_Script: {fileID: 11500000, guid: 65ee13ea4a6604144aac636ad7d4f9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iSceneNum: 1
+  goPanel: {fileID: 0}

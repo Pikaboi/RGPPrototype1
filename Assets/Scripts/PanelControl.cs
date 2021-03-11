@@ -62,6 +62,13 @@ public class PanelControl : MonoBehaviour
         iSceneCount = iSceneNum;
     }
 
+    //Overlload solidifies without scene change
+    public void startSolidify()
+    {
+        bSolidify = true;
+        bFade = false;
+    }
+
     private void fading()
     {
         //Set the color to fade based on time
