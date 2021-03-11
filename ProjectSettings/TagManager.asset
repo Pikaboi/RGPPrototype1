@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - warppoint
+  - Young
+  - Teen
+  - Adult
+  - Elderly
   layers:
   - Default
   - TransparentFX
