@@ -27,6 +27,8 @@ public class playerMovement : MonoBehaviour
     private InteractibleHint cIHint;
     private bool bItemInteract = false;
     private InteractibleItem cIItem;
+    private bool bNumpadInteract = false;
+    private InteractNumpad cNumpad;
 
     // Start is called before the first frame update
     void Start()
@@ -74,6 +76,10 @@ public class playerMovement : MonoBehaviour
             {
                 cIItem.interactCollect();
             }
+            if(bNumpadInteract == true)
+            {
+                cNumpad.turnOn();
+            }
         }
     }
 
@@ -91,6 +97,13 @@ public class playerMovement : MonoBehaviour
 
     }
 
+    public void enableNumpadInteract(InteractNumpad cNum)
+    {
+        bNumpadInteract = true;
+        cNumpad = cNum;
+
+    }
+
     //Remove the ability to interact to a *HINT* item
     public void disableHintInteract()
     {
@@ -101,5 +114,10 @@ public class playerMovement : MonoBehaviour
     public void disableItemInteract()
     {
         bItemInteract = false;
+    }
+
+    public void disableNumpadInteract()
+    {
+        bNumpadInteract = false;
     }
 }

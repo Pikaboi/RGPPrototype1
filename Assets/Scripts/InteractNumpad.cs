@@ -24,9 +24,7 @@ public class InteractNumpad : MonoBehaviour
         Debug.Log(other);
         if(other == goPlayer.GetComponent<CharacterController>())
         {
-            goPadlock.SetActive(true);
-            other.GetComponent<playerMovement>().enabled = false;
-            Camera.main.GetComponent<mouseLook>().enabled = false;
+            goPlayer.GetComponent<playerMovement>().enableNumpadInteract(this);
         }
     }
 
@@ -36,6 +34,7 @@ public class InteractNumpad : MonoBehaviour
         bcBoxTrigger.enabled = false;
         goPlayer.GetComponent<playerMovement>().enabled = true;
         Camera.main.GetComponent<mouseLook>().enabled = true;
+        goPlayer.GetComponent<playerMovement>().disableNumpadInteract();
     }
 
     public void Return()
@@ -43,5 +42,13 @@ public class InteractNumpad : MonoBehaviour
         goPadlock.SetActive(false);
         goPlayer.GetComponent<playerMovement>().enabled = true;
         Camera.main.GetComponent<mouseLook>().enabled = true;
+        goPlayer.GetComponent<playerMovement>().disableNumpadInteract();
+    }
+
+    public void turnOn()
+    {
+        goPadlock.SetActive(true);
+        goPlayer.GetComponent<playerMovement>().enabled = false;
+        Camera.main.GetComponent<mouseLook>().enabled = false;
     }
 }
