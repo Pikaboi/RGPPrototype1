@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class NumPadInput : MonoBehaviour
 {
+    public InteractNumpad sActivator;
     private string sInput;
     public Text tTextBox;
     [SerializeField]
@@ -77,7 +78,7 @@ public class NumPadInput : MonoBehaviour
     public void Exit()
     {
         sInput = "";
-        //this.enabled = false;
+        sActivator.Return();
     }
 
     public void Enter()
@@ -86,6 +87,7 @@ public class NumPadInput : MonoBehaviour
         if(sInput == sAnswer)
         {
             Debug.Log("yaya");
+            sActivator.Deactivate();
         } else
         {
             sInput = "";

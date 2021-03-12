@@ -460,6 +460,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2062555590037039006, guid: 352f3bb61acdb11468f7b3dffd5adbcb,
+        type: 3}
+      propertyPath: sActivator
+      value: 
+      objectReference: {fileID: 1298449048}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 352f3bb61acdb11468f7b3dffd5adbcb, type: 3}
 --- !u!1 &1132380243
@@ -596,10 +601,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1298449043}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a12962ebe3ed05a439e1c700cd5d60cf, type: 3}
+  m_Script: {fileID: 11500000, guid: e82637a47f9e3ac4ba084577abdf908a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   goPadlock: {fileID: 311645632}
+  bcBoxTrigger: {fileID: 1298449049}
+  goPlayer: {fileID: 1497699110914465066}
 --- !u!65 &1298449049
 BoxCollider:
   m_ObjectHideFlags: 0
