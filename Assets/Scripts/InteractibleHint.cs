@@ -60,6 +60,7 @@ public class InteractibleHint : MonoBehaviour
     public void interactText()
     {
         Debug.Log(sClueText);
+        cHintItem.GetComponent<resultant>().execute = true;
         cHintItem.BecomeActive();
     }
 }
