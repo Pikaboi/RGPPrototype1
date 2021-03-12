@@ -76,6 +76,7 @@ public class playerMovement : MonoBehaviour
             {
                 cIItem.interactCollect();
             }
+            //Also Checking for a numpad to start its puzzle
             if(bNumpadInteract == true)
             {
                 cNumpad.turnOn();
@@ -96,7 +97,7 @@ public class playerMovement : MonoBehaviour
         cIItem = cItem;
 
     }
-
+    //Enable an interaction with a lock puzzle
     public void enableNumpadInteract(InteractNumpad cNum)
     {
         bNumpadInteract = true;
@@ -115,7 +116,7 @@ public class playerMovement : MonoBehaviour
     {
         bItemInteract = false;
     }
-
+    //Remove Interactibility with a lock puzzle
     public void disableNumpadInteract()
     {
         bNumpadInteract = false;

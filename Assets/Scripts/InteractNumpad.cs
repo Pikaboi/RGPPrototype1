@@ -28,6 +28,7 @@ public class InteractNumpad : MonoBehaviour
         }
     }
 
+    //Turn off the collision when the player unlocks the puzzle
     public void Deactivate()
     {
         goPadlock.SetActive(false);
@@ -37,6 +38,7 @@ public class InteractNumpad : MonoBehaviour
         goPlayer.GetComponent<playerMovement>().disableNumpadInteract();
     }
 
+    //Quit out of the numpad with it incomplete
     public void Return()
     {
         goPadlock.SetActive(false);
@@ -45,6 +47,7 @@ public class InteractNumpad : MonoBehaviour
         goPlayer.GetComponent<playerMovement>().disableNumpadInteract();
     }
 
+    //Start the numpad puzzle
     public void turnOn()
     {
         goPadlock.SetActive(true);
