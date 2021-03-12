@@ -7,8 +7,9 @@ public class InteractibleItem : MonoBehaviour
 {
     //Add doors here
     public GameObject[] trig;
-    
-    
+
+    float timer = 0f;
+
     public Image ibuttonPrompt;
     //Its box collider
     private BoxCollider bcInteractArea;
@@ -22,7 +23,7 @@ public class InteractibleItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     void OnTriggerEnter(Collider other)
@@ -65,12 +66,14 @@ public class InteractibleItem : MonoBehaviour
     public void interactCollect()
     {
         Debug.Log("2");
-
-
-        //Open doors
-        for(int i =0; i< trig.Length; i++)
+        for (int i = 0; i < trig.Length; i++) 
         {
-            trig[i].SetActive(false);
+            trig[i].GetComponent<resultant>().execute = true;
         }
+
+       
+        
     }
+
+  
 }
