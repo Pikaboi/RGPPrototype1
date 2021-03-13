@@ -565,6 +565,11 @@ PrefabInstance:
       propertyPath: sActivator
       value: 
       objectReference: {fileID: 1298449048}
+    - target: {fileID: 2062555590037039006, guid: 352f3bb61acdb11468f7b3dffd5adbcb,
+        type: 3}
+      propertyPath: sDoor
+      value: 
+      objectReference: {fileID: 556105626}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 352f3bb61acdb11468f7b3dffd5adbcb, type: 3}
 --- !u!1 &1132380243
@@ -1307,7 +1312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1022f827acdd1c41917e8c58ae4944e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 500
+  mouseSensitivity: 300
   playerBody: {fileID: 1497699110914465071}
 --- !u!4 &1497699109025751970
 Transform:
