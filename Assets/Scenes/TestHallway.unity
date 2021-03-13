@@ -1034,6 +1034,11 @@ PrefabInstance:
       propertyPath: bcTrigger
       value: 
       objectReference: {fileID: 495031741}
+    - target: {fileID: 721182467977115379, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+        type: 3}
+      propertyPath: ibuttonPrompt
+      value: 
+      objectReference: {fileID: 396680574}
     - target: {fileID: 5726489021347683812, guid: 2d4ab7e5ea780da429d2038f7fe82865,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1684,6 +1689,11 @@ PrefabInstance:
       propertyPath: bcTrigger
       value: 
       objectReference: {fileID: 1408798454}
+    - target: {fileID: 721182467977115379, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+        type: 3}
+      propertyPath: ibuttonPrompt
+      value: 
+      objectReference: {fileID: 396680574}
     - target: {fileID: 5726489021347683812, guid: 2d4ab7e5ea780da429d2038f7fe82865,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2048,6 +2058,11 @@ PrefabInstance:
       propertyPath: bcTrigger
       value: 
       objectReference: {fileID: 1663685213}
+    - target: {fileID: 721182467977115379, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+        type: 3}
+      propertyPath: ibuttonPrompt
+      value: 
+      objectReference: {fileID: 396680574}
     - target: {fileID: 5726489021347683812, guid: 2d4ab7e5ea780da429d2038f7fe82865,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2145,7 +2160,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b787d965b9731949b18b32758cd4a78, type: 3}
+  m_Script: {fileID: 11500000, guid: a83a6164c80cd2e488213252516b1567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1814824161

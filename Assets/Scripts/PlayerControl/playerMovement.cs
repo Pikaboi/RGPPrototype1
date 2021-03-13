@@ -93,12 +93,14 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             //Scale down to crouch
-            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y / 2, transform.localScale.z);
+            // transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y / 2, transform.localScale.z);
+            GetComponent<CharacterController>().height = 1.6f;
         }
         else if (Input.GetKeyUp(KeyCode.Q))
         {
             //Scale back up after crouch
-            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 2, transform.localScale.z);
+            //transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 2, transform.localScale.z);
+            GetComponent<CharacterController>().height = 3.2f;
         }
     }
 

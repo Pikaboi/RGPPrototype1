@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 1909975294396900752}
   - component: {fileID: 1909975294396900755}
   - component: {fileID: 1909975294396900754}
-  - component: {fileID: 1909975294396900748}
   - component: {fileID: 1909975294396900751}
-  - component: {fileID: 1909975294396900749}
+  - component: {fileID: 4036466518268211412}
+  - component: {fileID: 6201042662794504567}
   m_Layer: 8
   m_Name: Key
   m_TagString: Untagged
@@ -114,19 +114,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1909975294396900748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909975294396900757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9031a0045b77edf45a6cf01faa0f78a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ibuttonPrompt: {fileID: 0}
 --- !u!65 &1909975294396900751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -140,7 +127,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.89, y: 0.58, z: 3.12}
   m_Center: {x: 0, y: 0, z: 1.67}
---- !u!114 &1909975294396900749
+--- !u!114 &4036466518268211412
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,9 +136,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1909975294396900757}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 035722935d2fd3f4e8f5bda3effa8338, type: 3}
+  m_Script: {fileID: 11500000, guid: a0057d2fff35c8847bfe95a25292831c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  execute: 0
+--- !u!114 &6201042662794504567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909975294396900757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5616d9c04b98092459b0f87746f57b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trig: []
   ibuttonPrompt: {fileID: 0}
-  cHintItem: {fileID: 0}
-  sClueText: 
