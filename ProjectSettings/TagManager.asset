@@ -11,6 +11,8 @@ TagManager:
   - Elderly
   - InteractableItem
   - InteractableHint
+  - OpenableDoor
+  - LockedDoor
   layers:
   - Default
   - TransparentFX
