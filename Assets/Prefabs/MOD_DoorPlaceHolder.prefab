@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6998343926543194923}
   - component: {fileID: 721182467977115376}
   - component: {fileID: 721182467977115379}
+  - component: {fileID: 6132368078535319942}
   m_Layer: 0
   m_Name: MOD_DoorPlaceHolder
   m_TagString: Untagged
@@ -106,3 +107,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b787d965b9731949b18b32758cd4a78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bClockwise: 1
+--- !u!65 &6132368078535319942
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8729043378694303735}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7681628, y: 3.6930685, z: 1.89}
+  m_Center: {x: -0.88408107, y: 1.8465343, z: 1.14}

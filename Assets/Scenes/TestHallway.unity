@@ -695,6 +695,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 721182467977115379, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+        type: 3}
+      propertyPath: bClockwise
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 721182467977115379, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+        type: 3}
+      propertyPath: bcTrigger
+      value: 
+      objectReference: {fileID: 329735644}
     - target: {fileID: 5726489021347683812, guid: 2d4ab7e5ea780da429d2038f7fe82865,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -755,8 +765,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: OpenableDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 8729043378694303735, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+        type: 3}
+      propertyPath: m_TagString
+      value: OpenableDoor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d4ab7e5ea780da429d2038f7fe82865, type: 3}
+--- !u!65 &329735644 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 6132368078535319942, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+    type: 3}
+  m_PrefabInstance: {fileID: 329735643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &338096748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -928,6 +949,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 721182467977115379, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+        type: 3}
+      propertyPath: bcTrigger
+      value: 
+      objectReference: {fileID: 495031741}
     - target: {fileID: 5726489021347683812, guid: 2d4ab7e5ea780da429d2038f7fe82865,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -983,13 +1009,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6132368078535319942, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 1.14
+      objectReference: {fileID: 0}
     - target: {fileID: 8729043378694303735, guid: 2d4ab7e5ea780da429d2038f7fe82865,
         type: 3}
       propertyPath: m_Name
       value: NumpadDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 8729043378694303735, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+        type: 3}
+      propertyPath: m_TagString
+      value: LockedDoor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d4ab7e5ea780da429d2038f7fe82865, type: 3}
+--- !u!65 &495031741 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 6132368078535319942, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+    type: 3}
+  m_PrefabInstance: {fileID: 495031740}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &569407855 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 28c271f1a58f679408f797e4f2e0860b,
@@ -1557,6 +1599,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 721182467977115379, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+        type: 3}
+      propertyPath: bcTrigger
+      value: 
+      objectReference: {fileID: 1408798454}
     - target: {fileID: 5726489021347683812, guid: 2d4ab7e5ea780da429d2038f7fe82865,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1619,6 +1666,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d4ab7e5ea780da429d2038f7fe82865, type: 3}
+--- !u!65 &1408798454 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 6132368078535319942, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+    type: 3}
+  m_PrefabInstance: {fileID: 1408798453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1447555648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1910,6 +1963,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 721182467977115379, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+        type: 3}
+      propertyPath: bcTrigger
+      value: 
+      objectReference: {fileID: 1663685213}
     - target: {fileID: 5726489021347683812, guid: 2d4ab7e5ea780da429d2038f7fe82865,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1972,6 +2030,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d4ab7e5ea780da429d2038f7fe82865, type: 3}
+--- !u!65 &1663685213 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 6132368078535319942, guid: 2d4ab7e5ea780da429d2038f7fe82865,
+    type: 3}
+  m_PrefabInstance: {fileID: 1663685212}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1753848812 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 28c271f1a58f679408f797e4f2e0860b,

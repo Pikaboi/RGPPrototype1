@@ -29,6 +29,8 @@ public class playerMovement : MonoBehaviour
     private InteractibleItem cIItem;
     private bool bNumpadInteract = false;
     private InteractNumpad cNumpad;
+    private bool bDoorInteract = false;
+    private DoorOpen cDoor;
 
     // Start is called before the first frame update
     void Start()
@@ -81,6 +83,10 @@ public class playerMovement : MonoBehaviour
             {
                 cNumpad.turnOn();
             }
+            if(bDoorInteract == true)
+            {
+                cDoor.OpenDoor();
+            }
         }
 
         //Crouching
@@ -116,6 +122,14 @@ public class playerMovement : MonoBehaviour
         cNumpad = cNum;
 
     }
+    //Enable an interaction with a Door
+    public void enableDoorInteract(DoorOpen cDoorOpen)
+    {
+        bDoorInteract = true;
+        cDoor = cDoorOpen;
+
+    }
+
 
     //Remove the ability to interact to a *HINT* item
     public void disableHintInteract()
@@ -132,5 +146,10 @@ public class playerMovement : MonoBehaviour
     public void disableNumpadInteract()
     {
         bNumpadInteract = false;
+    }
+    //Remove Interactibility with a door
+    public void disableDoorInteract()
+    {
+        bDoorInteract = false;
     }
 }
