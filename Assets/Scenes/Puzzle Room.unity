@@ -360,7 +360,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7681628, y: 3.6930685, z: 0.18453683}
   m_Center: {x: -0.88408107, y: 1.8465343, z: 0.092268415}
-<<<<<<< HEAD
 --- !u!114 &556105626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,8 +386,6 @@ MonoBehaviour:
 >>>>>>> parent of b6f2b44 (grr)
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> parent of 9e93e5e (a door that swings open and closed)
 --- !u!1 &1081601478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,7 +1281,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       value: 12
 =======
       value: 7
@@ -1292,9 +1288,6 @@ PrefabInstance:
 =======
       value: 7
 >>>>>>> parent of b6f2b44 (grr)
-=======
-      value: 11
->>>>>>> parent of 9e93e5e (a door that swings open and closed)
       objectReference: {fileID: 0}
     - target: {fileID: 232456663367684989, guid: 2e05d87f661c200458ed462daed7be01,
         type: 3}
