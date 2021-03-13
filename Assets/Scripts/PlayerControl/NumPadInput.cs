@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class NumPadInput : MonoBehaviour
 {
     public InteractNumpad sActivator;
+    public DoorOpen sDoor;
     private string sInput;
     public Text tTextBox;
     [SerializeField]
@@ -88,6 +89,13 @@ public class NumPadInput : MonoBehaviour
         {
             Debug.Log("yaya");
             sActivator.Deactivate();
+
+            //Check if a door is attached
+            if(sDoor != null)
+            {
+                sDoor.OpenDoor();
+            }
+
         } else
         {
             sInput = "";

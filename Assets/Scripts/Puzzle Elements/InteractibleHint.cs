@@ -23,7 +23,7 @@ public class InteractibleHint : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         //Check if the player is in the area
         if(other.tag == "Player")
