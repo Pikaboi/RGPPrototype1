@@ -16,8 +16,5 @@ public class resultant : MonoBehaviour
         
     }
 
-    void execute()
-    {
-        
-    }
+    public bool execute;
 }

@@ -591,11 +591,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2062555590037038978}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46552e8a0c986284f95eb5ab6fddb0cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e8c2a9befb7507499fdcef41a162e04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tTextBox: {fileID: 0}
-  sAnswer: 
+  tTextBox: {fileID: 2062555591502621530}
+  sAnswer: 2468
 --- !u!1 &2062555590136554564
 GameObject:
   m_ObjectHideFlags: 0
