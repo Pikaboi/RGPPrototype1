@@ -19,7 +19,7 @@ public class InteractNumpad : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         Debug.Log(other);
         if(other == goPlayer.GetComponent<CharacterController>())
