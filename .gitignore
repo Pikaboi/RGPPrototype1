@@ -32,5 +32,4 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-Assets/Materials/player.mat.meta
-ProjectSettings/TagManager.asset
+
