@@ -82,6 +82,18 @@ public class playerMovement : MonoBehaviour
                 cNumpad.turnOn();
             }
         }
+
+        //Crouching
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            //Scale down to crouch
+            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y / 2, transform.localScale.z);
+        }
+        else if (Input.GetKeyUp(KeyCode.Q))
+        {
+            //Scale back up after crouch
+            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 2, transform.localScale.z);
+        }
     }
 
     //Allow an interaction with a *HINT* item
