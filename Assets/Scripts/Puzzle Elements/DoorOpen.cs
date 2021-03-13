@@ -32,8 +32,6 @@ public class DoorOpen : MonoBehaviour
         {
             fClockwiseComponent = -1.0f;
         }
-
-        
     }
 
     // Update is called once per frame
@@ -67,6 +65,8 @@ public class DoorOpen : MonoBehaviour
     public void OpenDoor()
     {
         isOpening = true;
+        ibuttonPrompt.enabled = false;
+        bcTrigger.enabled = false;
     }
 
     //you know how interaction works in this game by now

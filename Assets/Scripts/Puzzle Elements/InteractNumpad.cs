@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InteractNumpad : MonoBehaviour
 {
+    public Image ibuttonPrompt;
     public GameObject goPadlock;
     public BoxCollider bcBoxTrigger;
     public GameObject goPlayer;
@@ -11,6 +13,7 @@ public class InteractNumpad : MonoBehaviour
     void Start()
     {
         goPadlock.SetActive(false);
+        ibuttonPrompt.enabled = false;
     }
 
     // Update is called once per frame
@@ -21,10 +24,25 @@ public class InteractNumpad : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log(other);
         if(other == goPlayer.GetComponent<CharacterController>())
         {
             goPlayer.GetComponent<playerMovement>().enableNumpadInteract(this);
+            if (goPadlock.activeSelf == false)
+            {
+                ibuttonPrompt.enabled = true;
+            } else
+            {
+                ibuttonPrompt.enabled = false;
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other == goPlayer.GetComponent<CharacterController>())
+        {
+            ibuttonPrompt.enabled = false;
+            goPlayer.GetComponent<playerMovement>().disableNumpadInteract();
         }
     }
 
@@ -37,6 +55,7 @@ public class InteractNumpad : MonoBehaviour
         Camera.main.GetComponent<mouseLook>().enabled = true;
         goPlayer.GetComponent<playerMovement>().disableNumpadInteract();
         Cursor.visible = false;
+        ibuttonPrompt.enabled = false;
     }
 
     //Quit out of the numpad with it incomplete

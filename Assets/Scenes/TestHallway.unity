@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e82637a47f9e3ac4ba084577abdf908a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ibuttonPrompt: {fileID: 396680574}
   goPadlock: {fileID: 1377061429}
   bcBoxTrigger: {fileID: 62768984}
   goPlayer: {fileID: 481271749}
