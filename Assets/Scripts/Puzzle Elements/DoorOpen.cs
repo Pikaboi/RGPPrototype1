@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DoorOpen : MonoBehaviour
 {
+    public Image ibuttonPrompt;
     private bool isOpening = false;
     [SerializeField]
     private bool bClockwise = true;
@@ -12,7 +14,8 @@ public class DoorOpen : MonoBehaviour
     private float fClockwiseComponent = 1.0f;
     // Start is called before the first frame update
     void Start()
-    {   
+    {
+        ibuttonPrompt.enabled = false;
         //Check if we want the door to be opened by the player or not
         if(gameObject.tag == "OpenableDoor")
         {
@@ -76,7 +79,7 @@ public class DoorOpen : MonoBehaviour
             if (other.GetComponent<playerMovement>() != false)
             {
                 //Show the button prompt
-                //ibuttonPrompt.enabled = true;
+                ibuttonPrompt.enabled = true;
 
                 //Now we can allow the player to activate his button press in movement
                 other.GetComponent<playerMovement>().enableDoorInteract(this);
@@ -93,7 +96,7 @@ public class DoorOpen : MonoBehaviour
             if (other.GetComponent<playerMovement>() != false)
             {
                 //Remove the button promp
-                //ibuttonPrompt.enabled = false;
+                ibuttonPrompt.enabled = false;
 
                 //We want to turn off the ability to use the interact button too
                 other.GetComponent<playerMovement>().disableDoorInteract();
