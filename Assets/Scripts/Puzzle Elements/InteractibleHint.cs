@@ -7,7 +7,6 @@ public class InteractibleHint : MonoBehaviour
 {
     //This is a button on the UI canvas to show you can interact
     public Image ibuttonPrompt;
-    public InteractibleItem cHintItem;
     [SerializeField]
     private string sClueText;
     // Start is called before the first frame update
@@ -60,7 +59,5 @@ public class InteractibleHint : MonoBehaviour
     public void interactText()
     {
         Debug.Log(sClueText);
-        cHintItem.GetComponent<resultant>().execute = true;
-        cHintItem.BecomeActive();
     }
 }
