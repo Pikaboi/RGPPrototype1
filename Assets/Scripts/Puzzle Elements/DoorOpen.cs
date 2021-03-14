@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,14 +8,19 @@ public class DoorOpen : MonoBehaviour
 {
     public Image ibuttonPrompt;
     private bool isOpening = false;
+    private bool isClosing = false;
+
     [SerializeField]
     private bool bClockwise = true;
     [SerializeField]
     private BoxCollider bcTrigger;
     private float fClockwiseComponent = 1.0f;
+    public bool isOpened;
+
     // Start is called before the first frame update
     void Start()
     {
+
         ibuttonPrompt.enabled = false;
         //Check if we want the door to be opened by the player or not
         if(gameObject.tag == "OpenableDoor")
@@ -43,6 +49,10 @@ public class DoorOpen : MonoBehaviour
             gameObject.transform.Rotate(0.0f, 0.5f * fClockwiseComponent, 0.0f, Space.Self);
         }
 
+        if(isClosing == true)
+        {
+            gameObject.transform.rotation = new Quaternion(0.0f,  0f, 0.0f, 0f);
+        }
         Debug.Log(gameObject.transform.rotation.eulerAngles.y);
 
         //Now checks for it its counter clock wise or clockwise
@@ -65,8 +75,17 @@ public class DoorOpen : MonoBehaviour
     public void OpenDoor()
     {
         isOpening = true;
+        isClosing = false;
         ibuttonPrompt.enabled = false;
         bcTrigger.enabled = false;
+    }
+
+    public void CloseDoor()
+    {
+        isOpening = false;
+        ibuttonPrompt.enabled = true;
+        bcTrigger.enabled = true;
+        isClosing = true;
     }
 
     //you know how interaction works in this game by now
