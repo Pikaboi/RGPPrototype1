@@ -29,6 +29,8 @@ public class playerMovement : MonoBehaviour
     private InteractibleItem cIItem;
     private bool bNumpadInteract = false;
     private InteractNumpad cNumpad;
+    private bool bDoorInteract = false;
+    private DoorOpen cDoor;
 
     // Start is called before the first frame update
     void Start()
@@ -81,18 +83,24 @@ public class playerMovement : MonoBehaviour
             {
                 cNumpad.turnOn();
             }
+            if(bDoorInteract == true)
+            {
+                cDoor.OpenDoor();
+            }
         }
 
         //Crouching
         if (Input.GetKeyDown(KeyCode.Q))
         {
             //Scale down to crouch
-            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y / 2, transform.localScale.z);
+            // transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y / 2, transform.localScale.z);
+            GetComponent<CharacterController>().height = 1.6f;
         }
         else if (Input.GetKeyUp(KeyCode.Q))
         {
             //Scale back up after crouch
-            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 2, transform.localScale.z);
+            //transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 2, transform.localScale.z);
+            GetComponent<CharacterController>().height = 3.2f;
         }
     }
 
@@ -116,6 +124,14 @@ public class playerMovement : MonoBehaviour
         cNumpad = cNum;
 
     }
+    //Enable an interaction with a Door
+    public void enableDoorInteract(DoorOpen cDoorOpen)
+    {
+        bDoorInteract = true;
+        cDoor = cDoorOpen;
+
+    }
+
 
     //Remove the ability to interact to a *HINT* item
     public void disableHintInteract()
@@ -132,5 +148,10 @@ public class playerMovement : MonoBehaviour
     public void disableNumpadInteract()
     {
         bNumpadInteract = false;
+    }
+    //Remove Interactibility with a door
+    public void disableDoorInteract()
+    {
+        bDoorInteract = false;
     }
 }
