@@ -7,6 +7,7 @@ public class InteractibleHint : MonoBehaviour
 {
     //This is a button on the UI canvas to show you can interact
     public Image ibuttonPrompt;
+    public Text tDialouge;
     [SerializeField]
     private string sClueText;
     // Start is called before the first frame update
@@ -14,6 +15,7 @@ public class InteractibleHint : MonoBehaviour
     {
         //Turn off the button at the start
         ibuttonPrompt.enabled = false;
+        tDialouge.enabled = false;
     }
 
     // Update is called once per frame
@@ -52,12 +54,14 @@ public class InteractibleHint : MonoBehaviour
 
                 //We want to turn off the ability to use the interact button too
                 other.GetComponent<playerMovement>().disableHintInteract();
+                tDialouge.enabled = false;
             }
         }
     }
 
     public void interactText()
     {
-        Debug.Log(sClueText);
+        tDialouge.text = sClueText;
+        tDialouge.enabled = true;
     }
 }

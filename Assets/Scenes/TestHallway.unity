@@ -272,7 +272,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 7f990220d4b212c4c88821d7dcce906f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9984958
+      value: -0.991
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7f990220d4b212c4c88821d7dcce906f,
         type: 3}
@@ -849,6 +849,7 @@ RectTransform:
   m_Children:
   - {fileID: 1377061430}
   - {fileID: 396680573}
+  - {fileID: 1384925127}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1749,7 +1750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.49, y: -287}
+  m_AnchoredPosition: {x: 17, y: 334}
   m_SizeDelta: {x: 190.89261, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &396680574
@@ -3533,7 +3534,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 7f990220d4b212c4c88821d7dcce906f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.93469715
+      value: -0.99
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7f990220d4b212c4c88821d7dcce906f,
         type: 3}
@@ -3660,6 +3661,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1313898157}
+  - component: {fileID: 1313898158}
+  - component: {fileID: 1313898159}
   m_Layer: 0
   m_Name: AlphabetBlock9
   m_TagString: Untagged
@@ -3685,6 +3688,34 @@ Transform:
   m_Father: {fileID: 1302097356}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1313898158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313898156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58455bacdb4dd5a4ea8f33f8125d1181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ibuttonPrompt: {fileID: 396680574}
+  tDialouge: {fileID: 1384925128}
+  sClueText: Blocks on the floor spell "Nine"
+--- !u!65 &1313898159
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313898156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1.9}
+  m_Center: {x: 15.4, y: -3.56, z: 12.31}
 --- !u!1 &1367069935 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2d668c5a7bf25ff43913cd041411ade9,
@@ -3737,6 +3768,84 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1612179015}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1384925126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1384925127}
+  - component: {fileID: 1384925129}
+  - component: {fileID: 1384925128}
+  m_Layer: 5
+  m_Name: DialougeText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1384925127
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384925126}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 175673252}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5.4, y: -295.12015}
+  m_SizeDelta: {x: 975.09576, y: 116.24025}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1384925128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384925126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 1a31b9e1be3f70849b1f40f5d08e93f9, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &1384925129
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384925126}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1408798453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4010,6 +4119,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1549556372}
+  - component: {fileID: 1549556373}
+  - component: {fileID: 1549556374}
   m_Layer: 0
   m_Name: AlphabetBlocks4
   m_TagString: Untagged
@@ -4035,6 +4146,34 @@ Transform:
   m_Father: {fileID: 1302097356}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1549556373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549556371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58455bacdb4dd5a4ea8f33f8125d1181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ibuttonPrompt: {fileID: 396680574}
+  tDialouge: {fileID: 1384925128}
+  sClueText: The Blocks there spell "Four"
+--- !u!65 &1549556374
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549556371}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7, y: 1.62, z: 1}
+  m_Center: {x: 8.73, y: -3.2, z: 18.77}
 --- !u!1001 &1558426664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4252,6 +4391,11 @@ PrefabInstance:
       propertyPath: sDoor
       value: 
       objectReference: {fileID: 1657993337}
+    - target: {fileID: 2062555590037039006, guid: 352f3bb61acdb11468f7b3dffd5adbcb,
+        type: 3}
+      propertyPath: sAnswer
+      value: 1649
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 352f3bb61acdb11468f7b3dffd5adbcb, type: 3}
 --- !u!1001 &1645361391
@@ -4984,6 +5128,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1910060521}
+  - component: {fileID: 1910060522}
+  - component: {fileID: 1910060523}
   m_Layer: 0
   m_Name: AlphabetBlocksSix
   m_TagString: Untagged
@@ -5008,6 +5154,34 @@ Transform:
   m_Father: {fileID: 1302097356}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1910060522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910060520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58455bacdb4dd5a4ea8f33f8125d1181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ibuttonPrompt: {fileID: 396680574}
+  tDialouge: {fileID: 1384925128}
+  sClueText: These Blocks spell out "Six"
+--- !u!65 &1910060523
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910060520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.73, y: 3.19, z: 1.13}
+  m_Center: {x: 8.5, y: -2.27, z: 23.48}
 --- !u!1 &1963239977
 GameObject:
   m_ObjectHideFlags: 0
@@ -5202,6 +5376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ibuttonPrompt: {fileID: 396680574}
+  tDialouge: {fileID: 1384925128}
   sClueText: The Blocks spell out "One"
 --- !u!65 &2019786984
 BoxCollider:
