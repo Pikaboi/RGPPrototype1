@@ -43,7 +43,7 @@ public class DoorOpen : MonoBehaviour
             gameObject.transform.Rotate(0.0f, 0.5f * fClockwiseComponent, 0.0f, Space.Self);
         }
 
-        Debug.Log(gameObject.transform.rotation.eulerAngles.y);
+        //Debug.Log(gameObject.transform.rotation.eulerAngles.y);
 
         //Now checks for it its counter clock wise or clockwise
         if (bClockwise == true)

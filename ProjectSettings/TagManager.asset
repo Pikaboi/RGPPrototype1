@@ -13,6 +13,8 @@ TagManager:
   - InteractableHint
   - OpenableDoor
   - LockedDoor
+  - Dissappearing
+  - Manager
   layers:
   - Default
   - TransparentFX

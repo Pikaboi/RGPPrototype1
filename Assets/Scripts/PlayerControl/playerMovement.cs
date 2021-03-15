@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
+
+
+
 
     //Movement Based Variables
     public CharacterController controller;
@@ -102,6 +106,11 @@ public class playerMovement : MonoBehaviour
             //transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 2, transform.localScale.z);
             GetComponent<CharacterController>().height = 3.2f;
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     //Allow an interaction with a *HINT* item
@@ -153,5 +162,17 @@ public class playerMovement : MonoBehaviour
     public void disableDoorInteract()
     {
         bDoorInteract = false;
+    }
+
+    //Teleport player to a destination
+    public void teleport(Transform des)
+    {
+        controller.enabled = false;
+        transform.position = (des.position);
+        transform.rotation = des.rotation;
+        controller.enabled = true;
+
+        GameObject.FindGameObjectWithTag("Manager").GetComponent<dissappearObjects>().Passes++;
+        
     }
 }
