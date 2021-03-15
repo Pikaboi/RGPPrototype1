@@ -65,7 +65,22 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 7f990220d4b212c4c88821d7dcce906f,
         type: 3}
       propertyPath: m_Name
-      value: MOD_AlphabetBlock
+      value: Prefab_AlphabetBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 1726278508004005325, guid: 7f990220d4b212c4c88821d7dcce906f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 732e42b1d58c3884990407f579e975d9, type: 2}
+    - target: {fileID: 3308367271492203982, guid: 7f990220d4b212c4c88821d7dcce906f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308367271492203982, guid: 7f990220d4b212c4c88821d7dcce906f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f990220d4b212c4c88821d7dcce906f, type: 3}
