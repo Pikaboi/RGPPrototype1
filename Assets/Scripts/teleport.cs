@@ -29,6 +29,7 @@ public class teleport : MonoBehaviour
             foreach (GameObject v in (GameObject.FindGameObjectsWithTag("OpenableDoor")))
             {
                 v.GetComponent<DoorOpen>().transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
+                v.GetComponent<DoorOpen>().getTrigger().enabled = true;
             } 
 
         }
