@@ -160,13 +160,4 @@ public class playerMovement : MonoBehaviour
     {
         bDoorInteract = false;
     }
-
-    //Teleport player to a destination
-    public void teleport(Transform des)
-    {
-        controller.enabled = false;
-        transform.position = (des.position);
-        controller.enabled = true;
-
-    }
 }
