@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
@@ -101,6 +102,11 @@ public class playerMovement : MonoBehaviour
             //Scale back up after crouch
             //transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 2, transform.localScale.z);
             GetComponent<CharacterController>().height = 3.2f;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
         }
     }
 
