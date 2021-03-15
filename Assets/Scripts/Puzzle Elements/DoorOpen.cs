@@ -14,12 +14,6 @@ public class DoorOpen : MonoBehaviour
     private bool bClockwise = true;
     [SerializeField]
     private BoxCollider bcTrigger;
-
-    public BoxCollider getTrigger()
-    {
-        return bcTrigger;
-    }
-    
     private float fClockwiseComponent = 1.0f;
     public bool isOpened;
 

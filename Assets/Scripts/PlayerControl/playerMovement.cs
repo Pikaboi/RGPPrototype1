@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    //Environment based variables
-    public int passes = 0;
-
 
     //Movement Based Variables
     public CharacterController controller;
@@ -163,8 +160,7 @@ public class playerMovement : MonoBehaviour
     {
         controller.enabled = false;
         transform.position = (des.position);
-        transform.rotation = des.rotation;
         controller.enabled = true;
-        passes++;
+
     }
 }
