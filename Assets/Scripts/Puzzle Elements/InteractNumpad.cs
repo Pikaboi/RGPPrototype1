@@ -54,7 +54,7 @@ public class InteractNumpad : MonoBehaviour
         goPlayer.GetComponent<playerMovement>().enabled = true;
         Camera.main.GetComponent<mouseLook>().enabled = true;
         goPlayer.GetComponent<playerMovement>().disableNumpadInteract();
-        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         ibuttonPrompt.enabled = false;
     }
 
@@ -65,7 +65,7 @@ public class InteractNumpad : MonoBehaviour
         goPlayer.GetComponent<playerMovement>().enabled = true;
         Camera.main.GetComponent<mouseLook>().enabled = true;
         goPlayer.GetComponent<playerMovement>().disableNumpadInteract();
-        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     //Start the numpad puzzle
@@ -74,6 +74,6 @@ public class InteractNumpad : MonoBehaviour
         goPadlock.SetActive(true);
         goPlayer.GetComponent<playerMovement>().enabled = false;
         Camera.main.GetComponent<mouseLook>().enabled = false;
-        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }
