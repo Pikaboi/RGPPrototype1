@@ -13,6 +13,8 @@ TagManager:
   - InteractableHint
   - OpenableDoor
   - LockedDoor
+  - Dissappearing
+  - Manager
   layers:
   - Default
   - TransparentFX
@@ -27,7 +29,7 @@ TagManager:
   - Warps
   - SecondCam
   - Unseen
-  - 
+  - Lamp
   - 
   - 
   - 

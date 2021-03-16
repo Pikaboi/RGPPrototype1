@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class playerMovement : MonoBehaviour
 {
 
+
+
+
     //Movement Based Variables
     public CharacterController controller;
 
@@ -87,6 +90,8 @@ public class playerMovement : MonoBehaviour
             if(bDoorInteract == true)
             {
                 cDoor.OpenDoor();
+                bDoorInteract = false;
+
             }
         }
 
@@ -159,5 +164,17 @@ public class playerMovement : MonoBehaviour
     public void disableDoorInteract()
     {
         bDoorInteract = false;
+    }
+
+    //Teleport player to a destination
+    public void teleport(Transform des)
+    {
+        controller.enabled = false;
+        transform.position = (des.position);
+        transform.rotation = des.rotation;
+        controller.enabled = true;
+
+        GameObject.FindGameObjectWithTag("Manager").GetComponent<dissappearObjects>().Passes++;
+        
     }
 }
