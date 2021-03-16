@@ -90,6 +90,8 @@ public class playerMovement : MonoBehaviour
             if(bDoorInteract == true)
             {
                 cDoor.OpenDoor();
+                bDoorInteract = false;
+
             }
         }
 
