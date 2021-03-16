@@ -3069,25 +3069,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5303923085450066343, guid: 28c271f1a58f679408f797e4f2e0860b, type: 3}
---- !u!1 &573519610 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7764192630835507448, guid: 63ae768a87674ee4fb5704deafb4b10c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1814047582}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &573519614
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 573519610}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0766045, y: 1.8303231, z: 2.0000007}
-  m_Center: {x: -0.46169776, y: 0.91516155, z: 0.9999997}
 --- !u!1001 &573945592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8944,6 +8925,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AlphabetBlocks4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417521193120018029, guid: 208673ce722a6eb4f96e1b35ac70ab27,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417521193120018029, guid: 208673ce722a6eb4f96e1b35ac70ab27,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417521193120018029, guid: 208673ce722a6eb4f96e1b35ac70ab27,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.16
       objectReference: {fileID: 0}
     - target: {fileID: 2417521193120018030, guid: 208673ce722a6eb4f96e1b35ac70ab27,
         type: 3}
