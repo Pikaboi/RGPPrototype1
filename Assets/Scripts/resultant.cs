@@ -1,0 +1,20 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class resultant : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        //hdhehehe
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public bool execute;
+}
