@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class mouseLook : MonoBehaviour
+public class mouseLookY : MonoBehaviour
 {
 
     public float mouseSensitivity;
@@ -14,7 +14,6 @@ public class mouseLook : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -29,6 +28,6 @@ public class mouseLook : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
         playerBody.Rotate(Vector3.up * mouseX);
-        transform.localRotation = (Quaternion.Euler(xRotation, 0f, 0f));
+        //transform.Rotate(Quaternion.Euler(xRotation, 0f, 0f);
     }
 }
