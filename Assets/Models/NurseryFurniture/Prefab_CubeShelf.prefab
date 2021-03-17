@@ -65,7 +65,17 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 013e5504142990c49b73eebb767503a7,
         type: 3}
       propertyPath: m_Name
-      value: MOD_CubeShelf
+      value: Prefab_CubeShelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609187526082989933, guid: 013e5504142990c49b73eebb767503a7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609187526082989933, guid: 013e5504142990c49b73eebb767503a7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 013e5504142990c49b73eebb767503a7, type: 3}
