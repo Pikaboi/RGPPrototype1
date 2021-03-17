@@ -37,6 +37,8 @@ public class teleport : MonoBehaviour
                 v.GetComponent<DoorOpen>().CloseDoor();
             }
         } 
+
+
         teleCount++;
     }
 }

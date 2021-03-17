@@ -8,6 +8,8 @@ public class InteractibleHint : MonoBehaviour
     //This is a button on the UI canvas to show you can interact
     public Image ibuttonPrompt;
     public Text tDialouge;
+
+    public Camera cam;
     [SerializeField]
     private string sClueText;
     // Start is called before the first frame update
@@ -21,7 +23,7 @@ public class InteractibleHint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+     
     }
 
     void OnTriggerStay(Collider other)
@@ -34,7 +36,6 @@ public class InteractibleHint : MonoBehaviour
             {
                 //Show the button prompt
                 ibuttonPrompt.enabled = true;
-
                 //Now we can allow the player to activate his button press in movement
                 other.GetComponent<playerMovement>().enableHintInteract(this);
             }
@@ -61,6 +62,10 @@ public class InteractibleHint : MonoBehaviour
 
     public void interactText()
     {
+        cam.gameObject.SetActive(true);
+
+        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<mouseLook>().enabled = false;
+
         tDialouge.text = sClueText;
         tDialouge.enabled = true;
     }
