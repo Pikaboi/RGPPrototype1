@@ -9,6 +9,8 @@ public class dissappearObjects : MonoBehaviour
 
     public int Passes = 0;
     private int dissappeared = 0;
+    public GameObject teenage;
+    public GameObject child;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,44 +25,73 @@ public class dissappearObjects : MonoBehaviour
 
     public void disable()
     {
+        
         if (Passes % 2 == 0)
         {
-            foreach (GameObject i in GameObject.FindGameObjectsWithTag("Teenage"))
-            {
 
-                {
-                    i.GetComponent<MeshRenderer>().enabled = (false);
-                }
-            }
+            teenage.SetActive(false);
+            //foreach (GameObject i in GameObject.FindGameObjectsWithTag("Teenage"))
+            //{
 
-            foreach (GameObject i in GameObject.FindGameObjectsWithTag("Child"))
-            {
+            //    MeshRenderer m = null;
 
-                {
-                    i.GetComponent<MeshRenderer>().enabled = (true);
-                }
-            }
+            //    i.TryGetComponent<MeshRenderer>(out m);
+            //    if (m != null)
+            //        m.enabled = (false);
+            //    else
+            //        if (m.GetComponentInChildren<MeshRenderer>() != null)
+            //        m.GetComponentInChildren<MeshRenderer>().enabled = false;
+
+            //}
+
+            child.SetActive(true);
+
+            //foreach (GameObject i in GameObject.FindGameObjectsWithTag("Child"))
+            //{
+
+            //    gameObject.hideFlags = HideFlags.None;
+
+            //    MeshRenderer m = null;
+
+            //    i.TryGetComponent<MeshRenderer>(out m);
+            //    if (m != null)
+            //        m.enabled = (true);
+            //    else
+            //        if (m.GetComponentInChildren<MeshRenderer>() != null)
+            //        m.GetComponentInChildren<MeshRenderer>().enabled = true;
+            //}
         }
 
         if (Passes % 2 == 1)
         {
-            foreach (GameObject i in GameObject.FindGameObjectsWithTag("Teenage"))
-            {
+            teenage.SetActive(true);
+            child.SetActive(false);
+            //foreach (GameObject i in GameObject.FindGameObjectsWithTag("Teenage"))
+            //{
 
-                {
-                    i.GetComponent<MeshRenderer>().enabled = true;
-                }
-            }
+            //    MeshRenderer m = null;
 
-            foreach (GameObject i in GameObject.FindGameObjectsWithTag("Child"))
-            {
+            //    i.TryGetComponent<MeshRenderer>(out m);
+            //    if (m != null)
+            //        m.enabled = (true);
+            //    else
+            //        if (m.GetComponentInChildren<MeshRenderer>() != null)
+            //        m.GetComponentInChildren<MeshRenderer>().enabled = true;
+            //}
+
+            //foreach (GameObject i in GameObject.FindGameObjectsWithTag("Child"))
+            //{
 
 
+            //    MeshRenderer m = null;
 
-                {
-                    i.GetComponent<MeshRenderer>().enabled = (false);
-                }
-            }
+            //    i.TryGetComponent<MeshRenderer>(out m);
+            //    if(m!=null)
+            //      m.enabled = (false);
+            //    else
+            //        if(m.GetComponentInChildren<MeshRenderer>()!=null)
+            //        m.GetComponentInChildren<MeshRenderer>().enabled = false;
+            //}
         }
     }
 }
