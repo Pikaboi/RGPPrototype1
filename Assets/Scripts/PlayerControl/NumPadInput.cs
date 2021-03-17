@@ -87,7 +87,6 @@ public class NumPadInput : MonoBehaviour
         //it will do something once i set up a pass code
         if(sInput == sAnswer)
         {
-            Debug.Log("yaya");
             sActivator.Deactivate();
 
             //Check if a door is attached

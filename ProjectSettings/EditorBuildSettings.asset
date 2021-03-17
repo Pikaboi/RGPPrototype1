@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestHallway.unity
-    guid: c51611e7b2249d64487c8fe2a5e1db96
+    path: Assets/Scenes/MainMenu.unity
+    guid: 0ad9cf1c549bce84ab2cef049f1c2154
+  - enabled: 1
+    path: Assets/Scenes/TestHallway 2.unity
+    guid: a62cc1e01c49ce04c8eec2d410824aab
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: d303b4aafa1bf294c86738adce11adf5
   m_configObjects: {}

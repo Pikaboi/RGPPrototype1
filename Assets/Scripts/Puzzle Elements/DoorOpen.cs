@@ -69,6 +69,13 @@ public class DoorOpen : MonoBehaviour
         bcTrigger.enabled = false;
     }
 
+    public void CloseDoor()
+    {
+        bcTrigger.enabled = true;
+    }
+
+
+
     //you know how interaction works in this game by now
     void OnTriggerStay(Collider other)
     {

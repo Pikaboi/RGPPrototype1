@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using TreeEditor;
+//using TreeEditor;
 using UnityEngine;
 
 public class dissappearObjects : MonoBehaviour
@@ -18,17 +18,47 @@ public class dissappearObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Passes > dissappeared)
+        
+    }
+
+    public void disable()
+    {
+        if (Passes % 2 == 0)
         {
-            foreach (GameObject i in GameObject.FindGameObjectsWithTag("Dissappearing"))
+            foreach (GameObject i in GameObject.FindGameObjectsWithTag("Teenage"))
             {
-                if (!i.activeSelf)
-                    continue;
-                else
+
                 {
-                    dissappeared++;
-                    i.SetActive(false);
-                    break;
+                    i.GetComponent<MeshRenderer>().enabled = (false);
+                }
+            }
+
+            foreach (GameObject i in GameObject.FindGameObjectsWithTag("Child"))
+            {
+
+                {
+                    i.GetComponent<MeshRenderer>().enabled = (true);
+                }
+            }
+        }
+
+        if (Passes % 2 == 1)
+        {
+            foreach (GameObject i in GameObject.FindGameObjectsWithTag("Teenage"))
+            {
+
+                {
+                    i.GetComponent<MeshRenderer>().enabled = true;
+                }
+            }
+
+            foreach (GameObject i in GameObject.FindGameObjectsWithTag("Child"))
+            {
+
+
+
+                {
+                    i.GetComponent<MeshRenderer>().enabled = (false);
                 }
             }
         }
