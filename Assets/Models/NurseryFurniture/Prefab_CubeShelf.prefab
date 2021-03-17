@@ -80,6 +80,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_CubeShelf
       objectReference: {fileID: 0}
+    - target: {fileID: 1422594794457115429, guid: 013e5504142990c49b73eebb767503a7,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422594794457115429, guid: 013e5504142990c49b73eebb767503a7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 961531fce2ce61c4690a140284bb445b, type: 2}
+    - target: {fileID: 1422594794457115429, guid: 013e5504142990c49b73eebb767503a7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1486ee4114582384ebcbb55fc9356777, type: 2}
     - target: {fileID: 2609187526082989933, guid: 013e5504142990c49b73eebb767503a7,
         type: 3}
       propertyPath: m_LocalPosition.x
