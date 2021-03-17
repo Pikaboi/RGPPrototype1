@@ -67,6 +67,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_ToyChest
       objectReference: {fileID: 0}
+    - target: {fileID: 1787591949236862358, guid: 1dc0b3a1b7135fd4795b31fb1e95896b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6851357909844867233, guid: 1dc0b3a1b7135fd4795b31fb1e95896b,
         type: 3}
       propertyPath: m_LocalPosition.z
