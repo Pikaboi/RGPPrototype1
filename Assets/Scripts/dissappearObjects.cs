@@ -21,9 +21,9 @@ public class dissappearObjects : MonoBehaviour
         
     }
 
-    void OnDisable()
+    public void disable()
     {
-        if (Passes % 2 == 1)
+        if (Passes % 2 == 0)
         {
             foreach (GameObject i in GameObject.FindGameObjectsWithTag("Teenage"))
             {
@@ -42,7 +42,7 @@ public class dissappearObjects : MonoBehaviour
             }
         }
 
-        if (Passes % 2 == 0)
+        if (Passes % 2 == 1)
         {
             foreach (GameObject i in GameObject.FindGameObjectsWithTag("Teenage"))
             {
