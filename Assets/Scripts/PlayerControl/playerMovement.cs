@@ -39,7 +39,7 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject.FindGameObjectWithTag("Manager").GetComponent<dissappearObjects>().disable();
     }
 
     // Update is called once per frame
@@ -118,6 +118,8 @@ public class playerMovement : MonoBehaviour
     //Allow an interaction with a *HINT* item
     public void enableHintInteract(InteractibleHint cHint)
     {
+        
+
         bHintInteract = true;
         cIHint = cHint;
     }
@@ -147,6 +149,9 @@ public class playerMovement : MonoBehaviour
     //Remove the ability to interact to a *HINT* item
     public void disableHintInteract()
     {
+        cIHint.GetComponent<InteractibleHint>().cam.gameObject.SetActive(false);
+        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<mouseLook>().enabled = true;
+
         bHintInteract = false;
     }
 
@@ -174,7 +179,10 @@ public class playerMovement : MonoBehaviour
         transform.rotation = des.rotation;
         controller.enabled = true;
 
+
         GameObject.FindGameObjectWithTag("Manager").GetComponent<dissappearObjects>().Passes++;
-        
+        GameObject.FindGameObjectWithTag("Manager").GetComponent<dissappearObjects>().disable();
+
+
     }
 }

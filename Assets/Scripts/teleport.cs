@@ -3,15 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class teleport : MonoBehaviour
 {
-
+    private int teleCount = 0;
     public Transform destination;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -22,6 +23,10 @@ public class teleport : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if(teleCount > 0)
+        {
+            SceneManager.LoadScene(2);
+        }
         if (other.gameObject.CompareTag("Player"))
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<playerMovement>().teleport(destination);
@@ -29,8 +34,11 @@ public class teleport : MonoBehaviour
             foreach (GameObject v in (GameObject.FindGameObjectsWithTag("OpenableDoor")))
             {
                 v.GetComponent<DoorOpen>().transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
-            } 
+                v.GetComponent<DoorOpen>().CloseDoor();
+            }
+        } 
 
-        }
+
+        teleCount++;
     }
 }
