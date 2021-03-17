@@ -77,5 +77,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Rug
       objectReference: {fileID: 0}
+    - target: {fileID: 954258686295005124, guid: 78dfb768bdfc6e944b55ca950fab4600,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4191f1932cbdeb94db5a56586f755f3b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78dfb768bdfc6e944b55ca950fab4600, type: 3}
