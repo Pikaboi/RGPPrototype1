@@ -15,6 +15,9 @@ TagManager:
   - LockedDoor
   - Dissappearing
   - Manager
+  - Rotating Block
+  - Teenage
+  - Child
   layers:
   - Default
   - TransparentFX

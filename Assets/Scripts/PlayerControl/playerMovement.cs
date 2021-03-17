@@ -39,7 +39,7 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject.FindGameObjectWithTag("Manager").GetComponent<dissappearObjects>().disable();
     }
 
     // Update is called once per frame
@@ -174,7 +174,10 @@ public class playerMovement : MonoBehaviour
         transform.rotation = des.rotation;
         controller.enabled = true;
 
+
         GameObject.FindGameObjectWithTag("Manager").GetComponent<dissappearObjects>().Passes++;
-        
+        GameObject.FindGameObjectWithTag("Manager").GetComponent<dissappearObjects>().disable();
+
+
     }
 }
