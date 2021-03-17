@@ -77,5 +77,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_LegoBrick
       objectReference: {fileID: 0}
+    - target: {fileID: 8848628599261440338, guid: 3f3f981531a4f69408004404ba6e585a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7862d5b269783364d93c379843364d38, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f3f981531a4f69408004404ba6e585a, type: 3}
