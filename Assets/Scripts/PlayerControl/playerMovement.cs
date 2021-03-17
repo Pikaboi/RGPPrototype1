@@ -118,6 +118,8 @@ public class playerMovement : MonoBehaviour
     //Allow an interaction with a *HINT* item
     public void enableHintInteract(InteractibleHint cHint)
     {
+        
+
         bHintInteract = true;
         cIHint = cHint;
     }
@@ -147,6 +149,9 @@ public class playerMovement : MonoBehaviour
     //Remove the ability to interact to a *HINT* item
     public void disableHintInteract()
     {
+        cIHint.GetComponent<InteractibleHint>().cam.gameObject.SetActive(false);
+        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<mouseLook>().enabled = true;
+
         bHintInteract = false;
     }
 

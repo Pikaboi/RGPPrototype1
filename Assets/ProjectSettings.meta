@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/ProjectSettings.meta
-guid: 5eda6a604b5d6964cbccda887d6b649c
-=======
-guid: 95bc51aa0f823b7428bed3608c228365
->>>>>>> master:Assets/Models/Materials/ps4.meta
+guid: 4d23e336bbc7ee848be4551d9413d7e6
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
