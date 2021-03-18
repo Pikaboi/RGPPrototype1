@@ -40,7 +40,7 @@ public class DoorOpen : MonoBehaviour
         if(isOpening == true)
         {
             //Rotates based on if clockwise or counter clockwise
-            gameObject.transform.Rotate(0.0f, 0.5f * fClockwiseComponent, 0.0f, 0f);
+            gameObject.transform.Rotate(0.0f, 150.0f * fClockwiseComponent * Time.deltaTime, 0.0f, 0f);
         }
 
         //Debug.Log(gameObject.transform.rotation.eulerAngles.y);
